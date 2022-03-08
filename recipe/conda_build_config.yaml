@@ -1,0 +1,4 @@
+channel_sources:
+  - tesseract-robotics,conda-forge,defaults
+channel_targets:
+  - tesseract-robotics main

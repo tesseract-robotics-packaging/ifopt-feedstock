@@ -1,0 +1,30 @@
+package:
+  name: ifopt
+  version: 0.0.1
+
+source:
+  - git_url: https://github.com/ethz-adrl/ifopt.git
+    git_rev: 40a6c8c14d1ab9789c342203d1fb3046eae07669
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - gtest
+    - gmock
+    - cmake
+    - ninja # [win]
+    - make # [linux]
+    - ros-industrial-cmake-boilerplate
+    - eigen
+    - ipopt
+  run:
+    - eigen
+    - ipopt
+
+build:
+  number: 0
+
+about:
+  home: https://github.com/ethz-adrl/ifopt
+  summary: Eigen-based C++ Interface to Nonlinear Programming Solvers 
