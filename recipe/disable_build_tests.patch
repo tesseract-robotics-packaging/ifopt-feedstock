@@ -1,0 +1,45 @@
+diff --git a/ifopt_core/CMakeLists.txt b/ifopt_core/CMakeLists.txt
+index f9485d4..2eb57f8 100644
+--- a/ifopt_core/CMakeLists.txt
++++ b/ifopt_core/CMakeLists.txt
+@@ -56,21 +56,21 @@ install(
+ #############
+ ## Testing ##
+ #############
+-find_package(GTest QUIET)
+-if (TARGET GTest::GTest) # only build when modern target exists
+-  add_executable(${LIB_CORE}-test 
+-    test/composite_test.cc
+-    test/problem_test.cc
+-  )  
+-  target_link_libraries(${LIB_CORE}-test  
+-    PRIVATE 
+-      ${LIB_CORE} 
+-      GTest::GTest GTest::Main
+-  )    
+-  add_test(${LIB_CORE}-test  ${LIB_CORE}-test)
++# find_package(GTest QUIET)
++# if (TARGET GTest::GTest) # only build when modern target exists
++#   add_executable(${LIB_CORE}-test 
++#     test/composite_test.cc
++#     test/problem_test.cc
++#   )  
++#   target_link_libraries(${LIB_CORE}-test  
++#     PRIVATE 
++#       ${LIB_CORE} 
++#       GTest::GTest GTest::Main
++#   )    
++#   add_test(${LIB_CORE}-test  ${LIB_CORE}-test)
+   
+-  install(
+-    TARGETS ${LIB_CORE}-test
+-    RUNTIME DESTINATION ${IFOPT_INSTALL_BINDIR}
+-  )
+-endif()
++#   install(
++#     TARGETS ${LIB_CORE}-test
++#     RUNTIME DESTINATION ${IFOPT_INSTALL_BINDIR}
++#   )
++# endif()
+ 
+ #############

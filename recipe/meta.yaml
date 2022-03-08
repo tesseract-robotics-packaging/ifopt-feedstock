@@ -7,6 +7,7 @@ source:
     git_rev: 40a6c8c14d1ab9789c342203d1fb3046eae07669
     patches:
       - fix_win_find_ipopt.patch # [win]
+      - disable_build_tests.patch # [linux]
 
 requirements:
   build:
