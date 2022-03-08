@@ -1,0 +1,12 @@
+c_compiler:
+- vs2017
+channel_sources:
+- tesseract-robotics,conda-forge,defaults
+channel_targets:
+- tesseract-robotics main
+cxx_compiler:
+- vs2017
+ipopt:
+- '3.14'
+target_platform:
+- win-64
