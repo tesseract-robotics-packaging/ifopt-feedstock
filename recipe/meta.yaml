@@ -5,6 +5,7 @@ package:
 source:
   - git_url: https://github.com/ethz-adrl/ifopt.git
     git_rev: 40a6c8c14d1ab9789c342203d1fb3046eae07669
+    folder: src
     patches:
       - fix_win_find_ipopt.patch # [win]
       - disable_build_tests.patch # [linux]

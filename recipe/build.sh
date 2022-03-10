@@ -10,7 +10,7 @@ cmake -DCMAKE_INSTALL_PREFIX:PATH=$PREFIX \
   -DCMAKE_INSTALL_LIBDIR=lib \
   -DBUILD_SHARED_LIBS=ON \
   -DBUILD_SNOPT=OFF \
-  -S . \
+  -S src \
   -B build_dir
 
 cmake --build build_dir --config Release -- -j$CPU_COUNT
