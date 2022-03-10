@@ -27,6 +27,17 @@ requirements:
     - eigen
     - ipopt
 
+test:
+  commands:
+    - test -f ${PREFIX}/include/ifopt/solver.h  # [unix]
+    - test -f ${PREFIX}/lib/libifopt_core.so  # [unix]
+    - test -f ${PREFIX}/lib/libifopt_ipopt.so  # [unix]
+    - if not exist %LIBRARY_PREFIX%\include\ifopt\solver.h (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\lib\ifopt_core.lib (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\lib\ifopt_ipopt.lib (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\bin\ifopt_core.dll (exit 1)  # [win]
+    - if not exist %LIBRARY_PREFIX%\bin\ifopt_ipopt.dll (exit 1)  # [win]
+
 build:
   number: 0
 
