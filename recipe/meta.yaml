@@ -40,8 +40,14 @@ test:
     - if not exist %LIBRARY_PREFIX%\bin\ifopt_ipopt.dll (exit 1)  # [win]
 
 build:
-  number: 2
+  number: 3
 
 about:
   home: https://github.com/ethz-adrl/ifopt
-  summary: Eigen-based C++ Interface to Nonlinear Programming Solvers 
+  summary: Eigen-based C++ Interface to Nonlinear Programming Solvers
+  license: BSD-3-Clause
+  license_file: src/LICENSE
+
+extra:
+  recipe-maintainers:
+    - johnwason
