@@ -3,7 +3,7 @@ About ifopt
 
 Home: https://github.com/ethz-adrl/ifopt
 
-Package license: 
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/tesseract-robotics/ifopt-feedstock/blob/master/LICENSE.txt)
 
@@ -73,4 +73,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@johnwason](https://github.com/johnwason/)
 
