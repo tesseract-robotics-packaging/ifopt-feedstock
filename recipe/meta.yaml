@@ -20,9 +20,10 @@ requirements:
     - ninja # [win]
     - make # [linux]
     - ros-industrial-cmake-boilerplate
+    - pkg-config
+  host:
     - eigen
     - ipopt
-    - pkg-config
   run:
     - eigen
     - ipopt
