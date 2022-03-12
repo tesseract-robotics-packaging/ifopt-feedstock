@@ -40,7 +40,7 @@ test:
     - if not exist %LIBRARY_PREFIX%\bin\ifopt_ipopt.dll (exit 1)  # [win]
 
 build:
-  number: 3
+  number: 4
 
 about:
   home: https://github.com/ethz-adrl/ifopt
