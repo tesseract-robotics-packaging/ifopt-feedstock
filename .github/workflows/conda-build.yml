@@ -8,7 +8,7 @@ on: [push, pull_request]
 jobs:
   build:
     name: ${{ matrix.CONFIG }}
-    runs-on: ${{ matrix.os }}-latest
+    runs-on: ${{ matrix.os_inst }}
     strategy:
       fail-fast: false
       matrix:
@@ -18,10 +18,12 @@ jobs:
             UPLOAD_PACKAGES: True
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
             os: ubuntu
+            os_inst: ubuntu-latest
           - CONFIG: win_64_
             SHORT_CONFIG: win_64_
             UPLOAD_PACKAGES: True
             os: windows
+            os_inst: windows-2019
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
